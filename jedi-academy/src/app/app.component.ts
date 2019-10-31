@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'jedi-academy';
-  nome = 'Nome introduzido dinamicamente na página'
-  user = {name: 'buscando via user.name'}
+  fabio = {name: 'Fábio Ivanov', isStudent: true, escola: 'Online'}
+  may = {name: 'Mayara Gomes', isStudent: false}
+  junior = {name: 'Junior Gomes', isStudent: true, escola: 'Online'}
 }
