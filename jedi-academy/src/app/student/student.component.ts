@@ -16,4 +16,12 @@ export class StudentComponent implements OnInit {
   ngOnInit() {
   }
 
+  clicado(): void {
+    console.log('botão clicado')
+  }
+
+  clicadoComEvento(event): void {
+    console.log(`botão com evento clicado ${event}`)
+  }
+
 }

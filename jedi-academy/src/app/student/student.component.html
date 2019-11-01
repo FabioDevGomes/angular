@@ -1,7 +1,18 @@
-<div>
+<div *ngIf="studante">
  Estudante {{studante.name}}
  <div [hidden]="!studante.isStudent">
-  Cont Exibido para o Estudante {{studante.name}} que estuda {{studante.escola}}
+  Cont Exibido com preperty binding [hidden] para o Estudante {{studante.name}} que estuda {{studante.escola}}
  </div>
-
+ <div *ngIf="studante.isStudent">
+  Cont Exibido com diretiva *ngIf para o Estudante {{studante.name}} que estuda {{studante.escola}}
+ </div>
 </div>
+
+-------------
+
+<div *ngIf="!studante">
+  Sem dados para exibir
+</div>
+<br/>
+<button type="button" name="button" (click)="clicado()"> click no botão</button>
+<button type="button" name="button" (click)="clicado($event)"> click no botão com evento</button>
