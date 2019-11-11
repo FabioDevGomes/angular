@@ -1,5 +1,7 @@
 <div *ngIf="studante">
- Estudante {{studante.name}}
+ Estudante <a href="#" (click)="cliecked()">{{studante.name}}</a>
+ <button type="button" (click)="descricao.focus()">Focus()</button><br/>
+ <textarea name="name" #descricao></textarea>
  <div [hidden]="!studante.isStudent">
   Cont Exibido com preperty binding [hidden] para o Estudante {{studante.name}} que estuda {{studante.escola}}
  </div>
@@ -15,4 +17,4 @@
 </div>
 <br/>
 <button type="button" name="button" (click)="clicado()"> click no botão</button>
-<button type="button" name="button" (click)="clicado($event)"> click no botão com evento</button>
+<button type="button" name="button" (click)="clicadoComEvento($event)"> click no botão com evento</button>

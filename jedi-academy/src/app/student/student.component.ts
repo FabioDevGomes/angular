@@ -24,4 +24,8 @@ export class StudentComponent implements OnInit {
     console.log(`botão com evento clicado ${event}`)
   }
 
+  cliecked(): void {
+    console.log(`Estudante clicado foi: ${this.studante.name}`);
+  }
+
 }
