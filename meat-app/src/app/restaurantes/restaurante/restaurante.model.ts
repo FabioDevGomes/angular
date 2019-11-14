@@ -5,4 +5,6 @@ export interface Restaurante{
   temporeEntrega: string
   avalicao: number
   caminhoImagem: string
+  sobre: string
+  horario: string
 }
