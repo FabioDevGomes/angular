@@ -3,12 +3,20 @@ import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "app/about/about.component";
 import { RestaurantesComponent } from "app/restaurantes/restaurantes.component";
 import { RestauranteDetalhesComponent } from "app/restaurante-detalhes/restaurante-detalhes.component";
+import { MenuComponent } from "app/restaurante-detalhes/menu/menu.component";
+import { ReviwesComponent } from "app/restaurante-detalhes/reviwes/reviwes.component";
 
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'restaurant', component: RestaurantesComponent},
-  {path: 'restaurant/:id', component: RestauranteDetalhesComponent}
+  {path: 'restaurant/:id', component: RestauranteDetalhesComponent,
+    children:  [
+        {path: '', redirectTo: 'menu', pathMatch: 'full'},
+        {path: 'menu', component: MenuComponent},
+        {path: 'reviews', component: ReviwesComponent}
+    ]
+  }
 
 ]
