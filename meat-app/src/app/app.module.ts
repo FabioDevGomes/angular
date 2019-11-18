@@ -17,7 +17,8 @@ import { MenuComponent } from './restaurante-detalhes/menu/menu.component';
 import { CarrinhoComponent } from './restaurante-detalhes/carrinho/carrinho.component';
 import { ItemMenuComponent } from './restaurante-detalhes/item-menu/item-menu.component';
 import { ReviwesComponent } from './restaurante-detalhes/reviwes/reviwes.component';
-
+import { FilmesComponent } from "app/restaurante-detalhes/filmes/filmes.component";
+import { BaresComponent } from './bares/bares.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { ReviwesComponent } from './restaurante-detalhes/reviwes/reviwes.compone
     MenuComponent,
     CarrinhoComponent,
     ItemMenuComponent,
-    ReviwesComponent
+    ReviwesComponent,
+    FilmesComponent,
+    BaresComponent
   ],
   imports: [
     BrowserModule,

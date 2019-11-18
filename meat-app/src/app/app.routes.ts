@@ -5,6 +5,8 @@ import { RestaurantesComponent } from "app/restaurantes/restaurantes.component";
 import { RestauranteDetalhesComponent } from "app/restaurante-detalhes/restaurante-detalhes.component";
 import { MenuComponent } from "app/restaurante-detalhes/menu/menu.component";
 import { ReviwesComponent } from "app/restaurante-detalhes/reviwes/reviwes.component";
+import { FilmesComponent } from "app/restaurante-detalhes/filmes/filmes.component";
+import { BaresComponent } from "app/bares/bares.component";
 
 
 export const ROUTES: Routes = [
@@ -15,8 +17,10 @@ export const ROUTES: Routes = [
     children:  [
         {path: '', redirectTo: 'menu', pathMatch: 'full'},
         {path: 'menu', component: MenuComponent},
-        {path: 'reviews', component: ReviwesComponent}
+        {path: 'reviews', component: ReviwesComponent},
+        {path: 'filmes', component: FilmesComponent}
     ]
-  }
+  },
+  {path: 'bares', component: BaresComponent}
 
 ]
