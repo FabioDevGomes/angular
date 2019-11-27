@@ -381,6 +381,16 @@
       "caminhoImagem": "assets/img/bares/belga.jpg",
       "sobre": "Bar top com a galera TOP",
       "horario": "Funciona de segunda à sexta, de 18h às 01h"
+    },
+    {
+      "id": "outroai",
+      "nome": "Mr Hoppy",
+      "categoria": "Pub",
+      "temporeEntrega": "10m",
+      "avalicao": 4.5,
+      "caminhoImagem": "assets/img/bares/mrhoppy.jpg",
+      "sobre": "Bar top com a galera TOP",
+      "horario": "Funciona de segunda à sexta, de 18h às 01h"
     }
   ]
 }
