@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Bar } from "app/bares/bar/bar.model";
+import { BaresService } from "app/bares/bares.service";
 
 @Component({
   selector: 'mt-bares',
@@ -6,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BaresComponent implements OnInit {
 
-  constructor() { }
+  bares: Bar[]
+
+  constructor(private baresService: BaresService) { }
 
   ngOnInit() {
+    this.baresService.bares().subscribe(bares => this.bares = bares)
   }
 
 }

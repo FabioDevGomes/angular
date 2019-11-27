@@ -370,5 +370,17 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [],
+  "bares": [
+    {
+      "id": "bread-bakery",
+      "nome": "Belga",
+      "categoria": "Pub",
+      "temporeEntrega": "55m",
+      "avalicao": 4.5,
+      "caminhoImagem": "assets/img/bares/belga.jpg",
+      "sobre": "Bar top com a galera TOP",
+      "horario": "Funciona de segunda à sexta, de 18h às 01h"
+    }
+  ]
 }

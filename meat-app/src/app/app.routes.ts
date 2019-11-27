@@ -7,6 +7,7 @@ import { MenuComponent } from "app/restaurante-detalhes/menu/menu.component";
 import { ReviwesComponent } from "app/restaurante-detalhes/reviwes/reviwes.component";
 import { FilmesComponent } from "app/restaurante-detalhes/filmes/filmes.component";
 import { BaresComponent } from "app/bares/bares.component";
+import { BarDetalhesComponent } from "app/bar-detalhes/bar-detalhes.component";
 
 
 export const ROUTES: Routes = [
@@ -21,6 +22,6 @@ export const ROUTES: Routes = [
         {path: 'filmes', component: FilmesComponent}
     ]
   },
-  {path: 'bares', component: BaresComponent}
-
+  {path: 'bar', component: BaresComponent},
+  {path: 'bar/:id', component: BarDetalhesComponent}
 ]

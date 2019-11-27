@@ -19,6 +19,9 @@ import { ItemMenuComponent } from './restaurante-detalhes/item-menu/item-menu.co
 import { ReviwesComponent } from './restaurante-detalhes/reviwes/reviwes.component';
 import { FilmesComponent } from "app/restaurante-detalhes/filmes/filmes.component";
 import { BaresComponent } from './bares/bares.component';
+import { BarComponent } from 'app/bares/bar/bar.component';
+import { BarDetalhesComponent } from './bar-detalhes/bar-detalhes.component';
+import { BaresService } from "app/bares/bares.service";
 
 @NgModule({
   declarations: [
@@ -34,14 +37,16 @@ import { BaresComponent } from './bares/bares.component';
     ItemMenuComponent,
     ReviwesComponent,
     FilmesComponent,
-    BaresComponent
+    BaresComponent,
+    BarComponent,
+    BarDetalhesComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantesService],
+  providers: [RestaurantesService, BaresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

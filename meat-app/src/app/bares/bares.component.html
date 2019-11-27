@@ -1,3 +1,16 @@
-<p>
-  bares works!
-</p>
+<section class="content-header">
+  <h1>
+    Todos os Bares
+  </h1>
+</section>
+
+
+<section class="content">
+
+  <div class="row">
+          <div *ngFor="let bar of bares" class="col-sm-6 col-xs-12">
+            <mt-bar [bar]="bar"></mt-bar>
+          </div>
+  </div>
+
+</section>
